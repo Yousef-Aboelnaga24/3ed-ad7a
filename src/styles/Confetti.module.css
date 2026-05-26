@@ -1,0 +1,25 @@
+.confettiLayer {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confettiPiece {
+    position: absolute;
+    top: -8%;
+    width: 12px;
+    height: 16px;
+    border-radius: 4px;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.18));
+    animation: fall 2.4s ease-in forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(108vh) rotate(640deg);
+        opacity: 0;
+    }
+}

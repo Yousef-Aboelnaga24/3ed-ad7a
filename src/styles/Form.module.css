@@ -1,0 +1,109 @@
+.glassCard {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 32px;
+    background: rgba(14, 19, 34, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 90px rgba(3, 11, 29, 0.35);
+    backdrop-filter: blur(18px);
+}
+
+.headline {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.prompt {
+    color: rgba(237, 246, 255, 0.72);
+    line-height: 1.8;
+}
+
+.loginForm {
+    display: grid;
+    gap: 1rem;
+}
+
+.fieldLabel {
+    display: grid;
+    gap: 0.55rem;
+    color: rgba(226, 235, 255, 0.82);
+    font-weight: 500;
+}
+
+.glassInput {
+    width: 100%;
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: #f8fbff;
+    outline: none;
+    transition: border 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glassInput:hover,
+.glassInput:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(132, 247, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+.loginButton {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent), rgba(255, 255, 255, 0.18));
+    color: #031118;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loginButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(132, 247, 255, 0.22);
+}
+
+.errorMessage {
+    color: #ff8fa3;
+    padding: 0.95rem 1rem;
+    background: rgba(255, 152, 152, 0.12);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 152, 152, 0.18);
+}
+
+.hintBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    color: rgba(220, 236, 255, 0.72);
+    font-size: 0.92rem;
+    opacity: 0.92;
+}
+
+.hintBar small {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+}
+
+@media (max-width: 760px) {
+    .glassCard {
+        padding: 1.4rem;
+    }
+
+    .headline {
+        font-size: 1.45rem;
+    }
+
+    .glassInput {
+        padding: 0.95rem 1rem;
+    }
+
+    .loginButton {
+        padding: 0.95rem 1.2rem;
+    }
+}
